@@ -88,11 +88,14 @@
                     <div class="bg-white section-form-slider">
                       <h5>Get a free quote with us today!
                         <!-- RD Mailform-->
-                        <form class="rd-mailform text-center offset-top-30" name="Quote-Home" netlify>
+                        <form class="rd-mailform text-center offset-top-30" netlify-honeypot="bot-field" name="Quote-Home" netlify>
                           <div class="form-group">
                             <label class="form-label" for="contact-name1">Your Name</label>
                             <input class="form-control" id="contact-name1" type="text" name="name" data-constraints="@Required">
                           </div>
+                          <p class="hidden">
+                            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                          </p>
                           <div class="form-group">
                             <label class="form-label" for="contact-email1">Email</label>
                             <input class="form-control" id="contact-email1" type="email" name="email" data-constraints="@Email @Required">
@@ -316,11 +319,14 @@
                 <div class="inset-lg-left-110">
                   <h5>Get a pricing quote today! </h5>
                   <!-- RD Mailform-->
-                  <form class="rd-mailform text-center offset-top-30" name="Quote-contact" netlify>
+                  <form class="rd-mailform text-center offset-top-30" netlify-honeypot="bot-field" name="Quote-contact" netlify>
                     <div class="form-group">
                       <label class="form-label" for="contact-name">Your Name</label>
                       <input class="form-control" id="contact-name" type="text" name="name" data-constraints="@Required">
                     </div>
+                    <p class="hidden">
+                      <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                    </p>
                     <div class="form-group">
                       <label class="form-label" for="contact-email">Email</label>
                       <input class="form-control" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
