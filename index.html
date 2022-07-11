@@ -30,6 +30,37 @@
 		<![endif]-->
   </head>
   <body>
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "111288467062588");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <!-- Page-->
     <div class="page text-center">
       <!-- Page Header-->
@@ -217,10 +248,10 @@
                     </div>
                     <div class="unit-body">
                       <p>
-                        <cite>Tracey Graham</cite>
+                        <cite>Amanda Ross</cite>
                       </p>
                       <p class="offset-top-8 line-height-21">
-                        <q style="font-size: 125%">I've had never met Declan in person, however from his review on Facebook and being in my local area I thought I'd throw a curve ball and ask him to clean up a rental for me in Co Down ! Declan checked in before hand and quoted from pics I sent him. He went above and beyond. Very reasonably priced and sent photos of the stages. Finishing touches second to none! From Co Antrim to Co Down the man is one of the best! Thanks so much! #thatsusnai</q>
+                        <q style="font-size: 125%">Declan did an amazing job on my patio, paths and driveway.  The tarmac looks like it’s brand new!  Professional from start to finish and he’s a gentleman.  Lots of friendly advice on how to maintain it too.</q>
                       </p>
                     </div>
                   </div>
@@ -233,10 +264,10 @@
                     </div>
                     <div class="unit-body">
                       <p>
-                        <cite>Beverely Lowry</cite>
+                        <cite>Marie-Claire Gok</cite>
                       </p>
                       <p class="offset-top-8 line-height-21">
-                        <q style="font-size: 125%">Brilliant job, such a change to the yard, so clean and tidy, friendly and professional service, thank you </q>
+                        <q style="font-size: 125%">Declan has just finished cleaning my garden and front drive. He has done an amazing job and I would highly recommend him. Not only was the job completed to an exceptional level but he also has a lovely friendly manner. </q>
                       </p>
                     </div>
                   </div>
